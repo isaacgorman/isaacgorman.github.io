@@ -12,6 +12,10 @@
   gtag('config', 'UA-114301737-1');
 
   gtag('event', 'visit', {'data': 'falseData'});
+
+  function visitForm() {
+    gtag('event', 'visit', {'data': 'visitedForm'});
+  }
 </script>
 
 
@@ -133,7 +137,7 @@
             <h2 class="subheading secondary-color mt20 launchaco-builder-hoverable">On demand bicycle repair delivery.
             </h2>
             <div class="mt40">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScqKUAiNv1wC6Z_lDQGFUmy2GUNAvMIXvwHd_QlDf-1n8Yhdw/viewform" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable primary-color mobile-text-center accent-bg">
+              <a onclick="visitForm();" href="https://docs.google.com/forms/d/e/1FAIpQLScqKUAiNv1wC6Z_lDQGFUmy2GUNAvMIXvwHd_QlDf-1n8Yhdw/viewform" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable primary-color mobile-text-center accent-bg">
                 <span> Fix Your Bike Today </span>
               </a>
             </div>
