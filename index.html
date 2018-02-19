@@ -32,6 +32,31 @@
     <link rel="stylesheet" href="https://www.launchaco.com/static/AllTemplates.min.css">
 
     <style>
+      #main-landing-bg {
+        background-image: url('img/wheel-landing-img.jpg');
+        background-size: cover;
+      }
+
+      #main-landing-bg:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(#86868654, #131e27);
+        -moz-transition: background .3s linear;
+        -webkit-transition: background .3s linear;
+        -o-transition: background .3s linear;
+        transition: background .3s linear;
+      }
+
+      .secondary-color {
+        color:white;
+      }
+
+
       .social-icon {
         height:40px;
       }
@@ -128,7 +153,7 @@
   </head>
 
   <body class="font-friendly">
-    <div class="lightblue-gradient">
+    <div class="lightblue-gradient" id="main-landing-bg">
       <!---->
       <header class="header">
         <div class="container-lrg">
