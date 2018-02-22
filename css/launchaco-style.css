@@ -2,13 +2,45 @@
   text-align:right;
 }
 
+#shop-c2a {
+  position:relative;
+  margin:0 auto;
+}
+
+#shop-request {
+  width:400px;
+  margin:0 auto;
+  position:relative;
+  display:block;
+}
+
+#shop-request > input {
+  display:block;
+  background-color: #88c4e0;
+  width:400px;
+  outline:none;
+  border:2px;
+  border-radius:4px;
+  font-size:12pt;
+  padding:10px;
+}
+
+#shop-request > input::placeholder {
+  color:#d7f9ff;
+}
+
+#shop-request > button {
+  display:block;
+  margin:30px auto;
+}
+
 #faq-1 .container-lrg {
   padding: 50px 0px;
 }
 
 #faq-1 img {
   width: 40%;
-  margin: 60px 0px 60px 100px;
+  margin: 40px 0px 40px 100px;
 }
 
 #pricing-3 {
@@ -141,4 +173,32 @@
 
 .launchaco-promo-animate:hover {
   opacity: 1 !important;
+}
+
+
+#faq-1 {
+}
+
+
+#faq-1 {
+  padding-bottom:50px;
+}
+
+
+ {
+  #faq-1 p:;;
+}
+
+
+ {
+}
+
+
+#faq-1 {
+}
+
+
+#f #pricing-3 {
+  background-image:url('../img/shop-invite.jpg');
+  background-size:cover;
 }
