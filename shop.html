@@ -30,134 +30,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="https://www.launchaco.com/static/AllTemplates.min.css">
-
-    <style>
-      #main-landing-bg {
-        background-image: url('img/wheel-landing-img.jpg');
-        background-size: cover;
-      }
-
-      #main-landing-bg:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(#86868654, #131e27);
-        -moz-transition: background .3s linear;
-        -webkit-transition: background .3s linear;
-        -o-transition: background .3s linear;
-        transition: background .3s linear;
-      }
-
-      .secondary-color {
-        color:white;
-      }
-
-      .lightblue-gradient {
-        background: linear-gradient(#277ac3,#76c1ce);
-      }
-
-
-      .social-icon {
-        height:40px;
-      }
-
-      .contact-nav > a {
-        margin-left:30px;
-        vertical-align: top;
-      }
-      .launchaco-promo {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        cursor: pointer;
-        width: 0;
-        height: 0;
-        z-index: 999999;
-      }
-
-      .launchaco-promo__active {
-        width: initial;
-        height: initial;
-      }
-
-      .launchaco-promo-speechbubble {
-        font-family: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
-        position: absolute;
-        left: 50px;
-        top: -11px;
-        padding: 9px;
-        color: white;
-        border-radius: 3px;
-        background: linear-gradient(#227ef7, #1290fc);
-        font-size: 14px;
-        font-weight: 600;
-        width: 93px;
-        box-sizing: border-box;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity .15s ease-in-out;
-      }
-
-      .launchaco-promo__active:hover .launchaco-promo-speechbubble {
-        opacity: 1;
-      }
-
-      .launchaco-promo svg {
-        transition: all .3s ease-in-out;
-        opacity: 0;
-      }
-
-      .launchaco-promo__active svg {
-        opacity: 1;
-      }
-
-      .launchaco-promo-speechbubble:before {
-        content: "";
-        width: 10px;
-        height: 10px;
-        transform: rotate(45deg);
-        left: -4px;
-        bottom: 10px;
-        border-radius: 3px;
-        background: #1290fc;
-        z-index: 2;
-        position: absolute
-      }
-
-      .launchaco-promo__active .launchaco-promo-speechbubble__animate {
-        animation: popinpopup 3s linear forwards 0.1s;
-      }
-
-      @keyframes popinpopup {
-        0% {
-          opacity: 0;
-          transform: translate3d(0, 3px, 0)
-        }
-        7%,
-        93% {
-          opacity: 1;
-          transform: translate3d(0, 0, 0)
-        }
-        100% {
-          opacity: 0;
-          transform: translate3d(0, -4px, 0)
-        }
-      }
-
-      .launchaco-promo-animate:hover {
-        opacity: 1 !important;
-      }
-    </style>
-
-
+    <link rel="stylesheet" type="text/css" href="css/launchaco-style.css">
   </head>
 
   <body class="font-friendly">
-    <div class="lightblue-gradient" id="main-landing-bg">
+    <div class="lightblue-gradient image-overlay" id="shop-landing-bg">
       <!---->
       <header class="header">
         <div class="container-lrg">
@@ -172,35 +49,38 @@
           </div>
         </div>
       </header>
-      <section class="section">
-        <div class="container-lrg flex">
-          <div class="col-6 flex flex-column center-vertical mobile-text-center mb40">
-            <h1 class="heading-lrg primary-color launchaco-builder-hoverable">On-demand bicycle pickup & repair</h1>
-            <h2 class="subheading secondary-color mt20 launchaco-builder-hoverable">Beta launch of the app coming soon! 🚀 Be ready for a seamless, convenient bike repair experience. But we know you can't wait.
-            </h2>
-            <div class="mt40">
-              <a onclick="visitForm();" href="https://docs.google.com/forms/d/e/1FAIpQLScqKUAiNv1wC6Z_lDQGFUmy2GUNAvMIXvwHd_QlDf-1n8Yhdw/viewform" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable primary-color mobile-text-center accent-bg">
-                <span> Fix Your Bike Today </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-6 mobile-text-center">
-            <div class="iphone launchaco-builder-hoverable">
-              <div class="mask">
-                <img src="https://cdn.launchaco.com/images/f7d9bdc6-f7ce-4381-998e-5425db343d5e.png" alt="Screenshot of iPhone App" class="mask-img">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
     <section id="faq-1" class="section lightblue-white" sitemeta="[object Object]">
-      <div class="container">
-        <div class="col-12 text-center">
-          <h3 class="heading primary-color launchaco-builder-hoverable">
-            Spoke
-          </h3>
-          <p class="subheading secondary-color mt20 launchaco-builder-hoverable">Choose to have your bicycle delivered to a bike shop, and approve repairs at the tap of a button. You will know what is happening to your bike in real time. With a premium experience built on convenience. Spoke meets people where they are. .
+      <div class="container-lrg flex">
+        <div class="col-4">
+          <img src="img/shop-check.svg" alt="">
+        </div>
+        <div class="col-8">
+          <h2 class="heading primary-color launchaco-builder-hoverable">Easy customer updates</h2>
+          <p class="subheading secondary-color mt20 launchaco-builder-hoverable">
+            No more phone-tag that leaves repairs half-finished. No more pulling hairs because three bikes in the back look exactly the same. With the Spoke app, your customers can approve your repair updates with a tap, and you’ll be able to tell bikes apart with a glance.
+          </p>
+        </div>
+      </div>
+      <div class="container-lrg flex">
+        <div class="col-4">
+          <img src="img/shop-order.svg" alt="">
+        </div>
+        <div class="col-8">
+          <h2 class="heading primary-color launchaco-builder-hoverable">Seamless work orders</h2>
+          <p class="subheading secondary-color mt20 launchaco-builder-hoverable">
+            You know you’ve always wanted to avoid confusion in written work order forms. We know you only invented a language because you needed to. And together, we’ll be able to leave that behind.
+          </p>
+        </div>
+      </div>
+      <div class="container-lrg flex">
+        <div class="col-4">
+          <img src="img/shop-delivery.svg" alt="">
+        </div>
+        <div class="col-8">
+          <h2 class="heading primary-color launchaco-builder-hoverable">Bikes delivered to you</h2>
+          <p class="subheading secondary-color mt20 launchaco-builder-hoverable">
+            Stop sitting restless when you can still hear the squeaking of rusty chains at the park last weekend. Your future customers are waiting for you through Spoke, and we deliver their bikes. Let the bikes come to you.
           </p>
         </div>
       </div>
@@ -217,92 +97,15 @@
         </div>
       </div>
     </section>
-    <section id="feature-2" class="section lightblue-gradient" sitemeta="[object Object]">
-      <div class="container-lrg flex">
-        <div class="col-4 text-center flex flex-column center-horizontal">
-          <i class="icon mobile-center-icon secondary-bg launchaco-builder-hoverable">
-            <svg class="svg-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
-              <path d="M25 3v4H0V3a1 1 0 0 1 1-1h5V.5a.5.5 0 0 1 1 0V2h11V.5a.5.5 0 0 1 1 0V2h5a1 1 0 0 1 1 1zM0 8h25v15a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm8.18 7.384l3 2.5a.5.5 0 0 0 .674-.03l5-5a.5.5 0 0 0-.707-.707l-4.677 4.677-2.65-2.208a.5.5 0 1 0-.64.768z"></path>
-            </svg>
-          </i>
-          <h3 class="bold primary-color launchaco-builder-hoverable"> 1) Schedule</h3>
-          <p class="paragraph secondary-color launchaco-builder-hoverable">Choose a pickup window that works best for you.
-
-          </p>
-        </div>
-        <div class="col-4 text-center flex flex-column center-horizontal">
-          <i class="icon mobile-center-icon secondary-bg launchaco-builder-hoverable">
-            <svg class="svg-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
-              <path d="M23.707 9.707L21.44 7.44A1.5 1.5 0 0 0 20.379 7H18V5.5A1.5 1.5 0 0 0 16.5 4H.5a.5.5 0 1 0 0 1h2a.5.5 0 0 1 0 1h-1a.5.5 0 1 0 0 1h1a.5.5 0 0 1 0 1 .5.5 0 0 0 0 1H3v7.5A1.5 1.5 0 0 0 4.5 18h.55a2.5 2.5 0 0 0 4.9 0h5.1a2.5 2.5 0 0 0 4.9 0h2.55a1.5 1.5 0 0 0 1.5-1.5v-6.086a1 1 0 0 0-.293-.707zM7.5 19A1.5 1.5 0 1 1 9 17.5 1.502 1.502 0 0 1 7.5 19zm10 0a1.5 1.5 0 1 1 1.5-1.5 1.502 1.502 0 0 1-1.5 1.5zm5.5-8h-5V8h2.379a.504.504 0 0 1 .353.146L23 10.414z"></path>
-            </svg>
-          </i>
-          <h3 class="bold primary-color launchaco-builder-hoverable">2) Pickup</h3>
-          <p class="paragraph secondary-color launchaco-builder-hoverable">A Spoke driver will pick up your broken bike during your scheduled pickup time.</p>
-        </div>
-        <div class="col-4 text-center flex flex-column center-horizontal">
-          <i class="icon mobile-center-icon secondary-bg launchaco-builder-hoverable">
-            <svg class="svg-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
-              <path d="M20.5 11a3.49 3.49 0 0 0-.619.063L18.194 6H20.5a.5.5 0 0 1 0 1h-1a.5.5 0 0 0 0 1h1a1.5 1.5 0 0 0 0-3h-5a.5.5 0 0 0 0 1h1.64l.666 2H9.809l-.5-1H10.5a.5.5 0 0 0 0-1h-3a.5.5 0 0 0 0 1h.691l.732 1.464L7 11.349A3.497 3.497 0 1 0 8.95 15h3.551l.004-.001a.493.493 0 0 0 .203-.048c.005-.002.01-.001.016-.004a.471.471 0 0 0 .063-.049.476.476 0 0 0 .067-.045l5.428-5.427.653 1.96A3.475 3.475 0 1 0 20.5 11zM8.95 14a3.472 3.472 0 0 0-1.12-2.094l1.608-2.412L11.691 14zm3.688-.344L10.309 9h6.984z"></path>
-            </svg>
-          </i>
-          <h3 class="bold primary-color launchaco-builder-hoverable">3) Ride </h3>
-          <p class="paragraph secondary-color launchaco-builder-hoverable"> Your bike will come back ready to ride </p>
-        </div>
-      </div>
-      <div class="container-lrg">
-        <div class="col-12 flex">
-          <div class="computer launchaco-builder-hoverable">
-            <div class="mask">
-              <img src="https://cdn.launchaco.com/images/d2687ebc-fe5f-4726-a245-1a23bfde54c3.png" alt="Screenshot of App inside a laptop" class="mask-img">
-            </div>
-            <div class="computer-bottom"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="pricing-3" class="section lightblue-white" sitemeta="[object Object]" activepage="Landing">
-          <div class="container text-center mb75">
-            <div class="col-12 text-center">
-              <h4 class="heading primary-color launchaco-builder-hoverable">Pricing </h4>
-              <p class="subheading secondary-color mt20 launchaco-builder-hoverable"></p>
-            </div>
-          </div>
-          <div class="container flex center-vertical">
-            <div class="col-6">
-              <div class="card pad30 launchaco-builder-hoverable">
-                <div class="mb20">
-                  <div class="text-center">
-                    <b class="bold primary-color">Pick up / Drop off </b>
-                    <div class="mt10">
-                      <b class="heading primary-color">$10 </b>
-                      <span class="paragraph secondary-color"></span>
-                    </div>
-                  </div>
-                  <ul class="mt20">
-                    <li class="flex mb20">
-                      <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill mr20 noshrink">
-                        <g transform="translate(4.000000, 5.000000)">
-                          <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
-                        </g>
-                      </svg>
-                      <span class="span secondary-color">(+ $ of repair) </span>
-                    </li>
-                  </ul>
-                </div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScqKUAiNv1wC6Z_lDQGFUmy2GUNAvMIXvwHd_QlDf-1n8Yhdw/viewform" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable button__full primary-color mobile-text-center accent-bg">
-                  <span> Fix your bike today </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
     <section id="cta-3" class="section lightblue-gradient" sitemeta="[object Object]">
       <!---->
-      <div class="container text-center">
+      <div class="container">
         <div class="col-12">
-          <h4 class="heading primary-color launchaco-builder-hoverable">Don't let a broken bike keep you from enjoying your day!</h4>
-          <p class="paragraph mt20 secondary-color launchaco-builder-hoverable">We will pick up and drop off your bike anytime, anywhere. </p>
+          <h4 class="heading primary-color launchaco-builder-hoverable text-center">Our Promise</h4>
+          <p class="paragraph mt20 secondary-color launchaco-builder-hoverable">
+            We started Spoke because we've worked in bike shops, fixed our own bikes, and turned screws the wrong way. We know, firsthand, that the best hands to care for bikes are the shop’s hands. And  when it comes to getting more people to love what they ride, nothing will replace the experts.<br><br>
+            Partner with us, and make your customer experience smooth and one-of-a-kind. Let us help you make bike repair more convenient for the community around you.
+          </p>
           <div class="mt40">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScqKUAiNv1wC6Z_lDQGFUmy2GUNAvMIXvwHd_QlDf-1n8Yhdw/viewform" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable primary-color mobile-text-center accent-bg">
               <span> Fix Your Bike Today </span>

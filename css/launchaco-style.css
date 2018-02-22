@@ -2,14 +2,30 @@
   text-align:right;
 }
 
+#faq-1 .container-lrg {
+  padding: 50px 0px;
+}
+
+#faq-1 img {
+  width: 40%;
+  margin: 60px 0px 60px 100px;
+}
+
 #pricing-3 {
-  background-image: url('../img/shop_invite.jpg');
+  background-image: url('../img/shop-invite.jpg');
   background-size: cover;
 }
 
 #main-landing-bg {
   background-image: url('../img/wheel-landing-img.jpg');
   background-size: cover;
+}
+
+#shop-landing-bg {
+  height:40%;
+  background-position: 0% 40%;
+  background-image: url('../img/shop-hero.jpeg');
+  background-size:cover;
 }
 
 .image-overlay:before {
