@@ -1,9 +1,18 @@
-#main-landing-bg {
-  background-image: url('img/wheel-landing-img.jpg');
+.text-right {
+  text-align:right;
+}
+
+#pricing-3 {
+  background-image: url('../img/shop_invite.jpg');
   background-size: cover;
 }
 
-#main-landing-bg:before {
+#main-landing-bg {
+  background-image: url('../img/wheel-landing-img.jpg');
+  background-size: cover;
+}
+
+.image-overlay:before {
   content: "";
   display: block;
   position: absolute;
